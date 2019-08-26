@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+header{
+    width: 98%;
+    padding: 10px;
+    font-size: 150%;
+    background-color: gray;
+    margin: 1% auto;
+}
+main{
+    width: 98%;
+    padding: 10px;
+    background-color: lightgray;
+    margin: 1% auto;
+}
+footer{
+    width: 98%;
+    padding: 10px;
+    font-size: 120%;
+    background-color: lightgoldenrodyellow;
+    margin: 1% auto;
+}
+span{
+    font-weight: bold;
+}
+#tablet, #desktop{
+    display: none;
+}
+@media only screen and (min-width: 481px){
+    main{
+        font-size: 150%;
+    }
+    #phone{
+        display: none;
+    }
+    #tablet{
+        display: block;
+    }
+}
+@media only screen and (min-width: 1024px){
+    #tablet{
+        display: none;
+    }
+    #desktop{
+        display: block;
+    }
+}
